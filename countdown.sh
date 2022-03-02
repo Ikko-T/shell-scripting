@@ -6,4 +6,4 @@ do
   sleep 1
 done
 
-
+figlet -f doh  "Happy New Year"
