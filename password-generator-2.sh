@@ -29,11 +29,13 @@ in_process ()
    done
    
    kill $pid
+   wait $pid 2> /dev/null
    echo ""
-   echo -n "Your password: ${password}"
+   echo "Your password: ${password}"
+   sleep 0.5
 }
 
-length ()
+ps_length ()
 {
   echo ""
   sleep 1
@@ -46,24 +48,23 @@ cat << END
   You can set up the length of a number for the password.
 END
 
-
+ps_length
 
 in_process
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+while [ 1 ]
+do
+  read -p 'Another new one? (y/n): ' answer
+    if [ $answer = 'y' ]; then
+      ps_length
+      in_process      
+    elif [ $answer = 'n' ]; then
+      echo ""
+      figlet -f rozzo "Have a Good One!"
+      exit
+    else
+      echo "That is not an option"
+    fi
+done
 
 
