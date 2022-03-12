@@ -1,6 +1,5 @@
 #!/bin/bash
 
-rand_num=$((2 + $RANDOM % 10))
 
 dot ()
 {
@@ -18,9 +17,11 @@ generate_password ()
 
 in_process ()
 {
-   echo -n "Password being generated"
-   dot &
+   rand_num=$((2 + $RANDOM % 10))
    password=$(generate_password)
+   echo -n "Password being generated"
+   
+   dot &
    pid=$!
  
    for i in `seq 1 $rand_num`
@@ -38,14 +39,25 @@ in_process ()
 ps_length ()
 {
   echo ""
-  sleep 1
-  read -p 'Enter the length of a number: ' length
+  sleep 1 
+  
+  x=0
+  num=/\d/
+  while [ $x = 0 ]
+  do
+    read -p 'Enter the length of a number: ' length
+    if [ -z "$length" ] || [  "$num" != "$length" ]; then
+       echo "Please enter the number"
+    else
+       x=1
+    fi
+  done
 }
 
 cat << END
-  Welcome to a Password Shop!
-  We generate a random alphanumeric password for you.
-  You can set up the length of a number for the password.
+Welcome to a Password Shop!
+We generate a random alphanumeric password for you.
+You can set up the length of a number for the password.
 END
 
 ps_length
