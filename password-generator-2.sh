@@ -70,7 +70,7 @@ do
       password_length
       in_process      
     elif [ "$answer" = 'n' ]; then
-      echo 
+      echo
       figlet -f rozzo "Have a Good One!"
       exit
     else
