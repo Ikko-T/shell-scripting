@@ -39,7 +39,7 @@ in_process ()
 ps_length ()
 {
   echo ""
-  sleep 1 
+  sleep 0.5 
   
   x=0
   while [ $x = 0 ]
@@ -55,6 +55,7 @@ ps_length ()
 
 cat << END
 Welcome to a Password Shop!
+
 We generate a random alphanumeric password for you.
 You can set up the length of a number for the password.
 END
@@ -65,7 +66,7 @@ in_process
 
 while [ 1 ]
 do
-  read -p 'Another new one? (y/n): ' answer
+  read -p 'Do you want new different one? (y/n): ' answer
     if [ $answer = 'y' ]; then
       ps_length
       in_process      
@@ -74,8 +75,7 @@ do
       figlet -f rozzo "Have a Good One!"
       exit
     else
+      <2 /dev/null
       echo "That is not an option"
     fi
 done
-
-
