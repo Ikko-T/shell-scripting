@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 dot ()
 {
   while [ 1 ]
@@ -44,7 +43,7 @@ ps_length ()
   x=0
   while [ $x = 0 ]
   do
-    read -p 'Enter the length of a number: ' length
+    read -p 'Enter the number length: ' length
     if [[ "$length" =~ ^[0-9]+$ ]]; then
       x=1
     else
@@ -75,7 +74,7 @@ do
       figlet -f rozzo "Have a Good One!"
       exit
     else
-      <2 /dev/null
+      echo 2> /dev/null
       echo "That is not an option"
     fi
 done
