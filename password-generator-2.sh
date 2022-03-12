@@ -30,20 +30,20 @@ in_process ()
    
    kill $pid
    wait $pid 2> /dev/null
-   echo ""
+   echo
    echo "Your password: ${password}"
    sleep 0.8
 }
 
-ps_length ()
+password_length ()
 {
-  echo ""
+  echo
   sleep 0.5 
   
   x=0
   while [ $x = 0 ]
   do
-    read -pn 3 'Enter the number length > ' length
+    read -p 'Enter the number length > ' length
     if [[ "$length" =~ ^[0-9]+$ ]]; then
       x=1
     else
@@ -59,22 +59,22 @@ We generate a random alphanumeric password for you.
 You can set up the length of a number for the password.
 END
 
-ps_length
+password_length
 
 in_process
 
 while [ 1 ]
 do
   read -p 'Do you want new different one? (y/n): ' answer
-    if [ $answer = 'y' ]; then
-      ps_length
+    if [ "$answer" = 'y' ]; then
+      password_length
       in_process      
-    elif [ $answer = 'n' ]; then
-      echo ""
+    elif [ "$answer" = 'n' ]; then
+      echo 
       figlet -f rozzo "Have a Good One!"
       exit
     else
-      2>&1 /dev/null
+      "$answer" 2> /dev/null
       echo "That is not an option"
     fi
 done
