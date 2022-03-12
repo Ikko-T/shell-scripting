@@ -42,14 +42,13 @@ ps_length ()
   sleep 1 
   
   x=0
-  num=/\d/
   while [ $x = 0 ]
   do
     read -p 'Enter the length of a number: ' length
-    if [ -z "$length" ] || [  "$num" != "$length" ]; then
-       echo "Please enter the number"
+    if [[ "$length" =~ ^[0-9]+$ ]]; then
+      x=1
     else
-       x=1
+      echo "Please enter the number"
     fi
   done
 }
