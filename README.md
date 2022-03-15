@@ -49,6 +49,9 @@ Learning Linux/Unix shell scripting by example along with the theory will help u
 
 - [shell\-scripting/random_password\.sh at master · Ikko\-T/shell\-scripting](https://github.com/Ikko-T/shell-scripting/blob/master/random_password.sh)
 
+  Reference(s):
+  [Random Password Generator Linux Shell Script Tutorial \- YouTube](https://www.youtube.com/watch?v=HEohR7b-fdE&t=309s)
+
 <p align="right"><a href="#top">back to top</a></p>
 <br>
 
