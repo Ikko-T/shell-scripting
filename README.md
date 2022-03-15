@@ -20,7 +20,7 @@
       <a href="#introduction">Introduction</a>
     </li>
     <li>
-      <a href="#contents">Contents</a>
+      <a href="#projects">Projects</a>
       <ul>
         <li><a href="#randompassword">Random password</a></li>
       </ul>
@@ -29,19 +29,19 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
+<!-- INTRODUCTION -->
 
 ## Introduction
 
-Learning Linux/Unix shell scripting by example along with the theory will help understand some of the basics of shell script programming.
+Learning Linux/Unix shell scripting by example along with the theory will help understand the basics of shell script programming. That being said, I give it a shot to build out applications through some hands-on practice/tutorials on shell scripting projects out there.
 <br>
 
 <p align="right"><a href="#top">back to top</a></p>
 <br>
 
-<!-- CONTENTS -->
+<!-- PROJECTS -->
 
-## Contents
+## Projects
 
 <br>
 
