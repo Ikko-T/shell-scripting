@@ -22,7 +22,8 @@
     <li>
       <a href="#projects">Projects</a>
       <ul>
-        <li><a href="#randompassword">Random password</a></li>
+        <li><a href="#randompassword">Random Password</a></li>
+        <li><a href="#typingspellingwords">Typing Spelling Words</a></li>
       </ul>
     </li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -47,10 +48,28 @@ Learning Linux/Unix shell scripting by example along with the theory will help u
 
 ### Random_password
 
-- [shell\-scripting/random_password\.sh at master · Ikko\-T/shell\-scripting](https://github.com/Ikko-T/shell-scripting/blob/master/random_password.sh)
+Source code:
+[shell\-scripting/random_password\.sh at master · Ikko\-T/shell\-scripting](https://github.com/Ikko-T/shell-scripting/blob/master/random_password.sh)
 
-  Reference(s):
-  [Random Password Generator Linux Shell Script Tutorial \- YouTube](https://www.youtube.com/watch?v=HEohR7b-fdE&t=309s)
+Reference(s):
+[Random Password Generator Linux Shell Script Tutorial \- YouTube](https://www.youtube.com/watch?v=HEohR7b-fdE&t=309s)
+
+### Typing_Spelling_Words
+
+Source code:
+[shell\-scripting/typing_spelling_words\.sh at master · Ikko\-T/shell\-scripting](https://github.com/Ikko-T/shell-scripting/blob/master/typing_spelling_words.sh)
+
+Reference(s):
+[Random Words and Dictionaries on Linux \- YouTube](https://www.youtube.com/watch?v=ETZmBuv1h9s&t=203s)
+
+<!-- Note that to make a file executable
+```sh
+chmod +x random_password.sh
+```
+then, run the script in your terminal as below:
+```sh
+./random_password.sh
+``` -->
 
 <p align="right"><a href="#top">back to top</a></p>
 <br>
