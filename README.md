@@ -44,8 +44,6 @@ Learning Linux/Unix shell scripting by example along with the theory will help u
 
 ## Projects
 
-<br>
-
 ### Random_password
 
 Source code:
