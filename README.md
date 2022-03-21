@@ -44,7 +44,15 @@ Learning Linux/Unix shell scripting by example along with the theory will help u
 
 ## Projects
 
+### 1
+
 ### Random_password
+
+Run this script with
+
+```sh
+'bash random_password.sh' or './random_password.sh'
+```
 
 Source code:
 [shell\-scripting/random_password\.sh at master · Ikko\-T/shell\-scripting](https://github.com/Ikko-T/shell-scripting/blob/master/random_password.sh)
@@ -52,7 +60,15 @@ Source code:
 Reference(s):
 [Random Password Generator Linux Shell Script Tutorial \- YouTube](https://www.youtube.com/watch?v=HEohR7b-fdE&t=309s)
 
+### 2
+
 ### Typing_Spelling_Words
+
+Run this script with
+
+```sh
+'bash typing_spelling_words.sh' or './typing_spelling_words.sh'
+```
 
 Source code:
 [shell\-scripting/typing_spelling_words\.sh at master · Ikko\-T/shell\-scripting](https://github.com/Ikko-T/shell-scripting/blob/master/typing_spelling_words.sh)
